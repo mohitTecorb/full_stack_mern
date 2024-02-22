@@ -39,7 +39,7 @@ const Login = () => {
               </div>
               <div className='flex justify-end'>
                 <button type='submit'
-                 className='py-5 px-12 shadow-md bg-orange-400 mt-5 rounded-lg '>Login</button>
+                  className='py-5 px-12 shadow-md bg-orange-400 mt-5 rounded-lg '>Login</button>
               </div>
             </div>
           </form>
