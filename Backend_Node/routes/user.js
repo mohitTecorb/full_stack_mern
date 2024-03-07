@@ -11,7 +11,4 @@ router.post('/changePassword',  user.change_password);
 router.get('/getUserProfile', user.getDetails);
 router.post('/forgotPassword', user.forgotPassword);
 
-
-
-
 module.exports = router;

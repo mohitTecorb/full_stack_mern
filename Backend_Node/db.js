@@ -14,7 +14,7 @@
 //   // Close the connection when done
 //   // mongoose.connection.close();
 // });
-const DB_URL = "mongodb+srv://mppm059:noida_hot@cluster0.wgdpjae.mongodb.net/test?retryWrites=true&w=majority"
+const DB_URL = "mongodb+srv://mppm059:noida_hot@cluster0.wgdpjae.mongodb.net/test?retryWrites=true&w=majority/"
 const mongoose = require('mongoose');
 
 // MongoDB connection URI

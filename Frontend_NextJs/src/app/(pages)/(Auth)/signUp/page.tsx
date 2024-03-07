@@ -1,4 +1,5 @@
 'use client'
+import { signUpService } from '@/helper/service/authService'
 import React, { useState } from 'react'
 const Signup = () => {
     const [userData, setUserData] = useState({
@@ -11,9 +12,10 @@ const Signup = () => {
         const { name, value } = e.target;
         setUserData({ ...userData, [name]: value })
     }
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(">>>>>>>>", userData);
+        const response = await signUpService(userData)
+        console.log(">>>>>>>>", response);
     }
     return (
         <div className='flex flex-col h-screen justify-center items-center'>

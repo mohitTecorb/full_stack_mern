@@ -7,7 +7,7 @@ require('./db');
 app.use(cors());
 
 var userRoutes = require('./routes/user');
-app.use('/api/v1/user', userRoutes);
+app.use('/api/v1', userRoutes);
 
 app.use('/' , (req,res) =>{
   res.json("This app runing on development mode")

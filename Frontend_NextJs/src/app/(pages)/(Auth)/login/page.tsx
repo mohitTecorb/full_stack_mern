@@ -11,7 +11,7 @@ const Login = () => {
   }
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(">>>>>>>>", userData);
+    // console.log(">>>>>>>>", userData);
   }
   return (
     <div className='flex flex-col h-screen justify-center items-center'>

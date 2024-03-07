@@ -8,6 +8,8 @@ var message = {
 
 class userServices {
     async signUp(req, res) {
+        console.log("req", req);
+        console.log("red", res);
         try {
             var req_data = req.body;
             if (!req_data.fullName || !req_data.email || !req_data.password) {
@@ -95,7 +97,6 @@ class userServices {
         }
     }
 
-
     async change_password(req, res) {
         try {
             var data = req.body;
@@ -162,9 +163,6 @@ class userServices {
             return res.json({ code: codes.internal, message: message.internal })
         }
     }
-
-
-
 
 }
 module.exports = userServices;
